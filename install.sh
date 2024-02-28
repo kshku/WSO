@@ -14,4 +14,4 @@ fi
 
 chmod +x "$install_dir/wso"
 
-echo "wso has been isntalled to $install_dir"
+echo "wso has been installed to $install_dir"
