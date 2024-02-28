@@ -3,8 +3,18 @@ A Web shortcut manager
 
 wso is a simple shell script for managing and opening webpages links in a browser. It allows you to save, list, and, open web pages with ease. You can group links together and using the group name you can open multiple links together.
 
+## Install
+Either run
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/yourusername/yourrepository/main/install.sh)"
+```
+or run
+```bash
+sh -c "$(wget -qO- https://raw.githubusercontent.com/yourusername/yourrepository/main/install.sh)"
+```
+or manually install by copying and pasting the wso.sh file
+
 ## Usage
-Run the install script to install or manually copy the wso.sh file to a directory in PATH variable.
 ```txt
 wso [OPTIONS] [ARGS] [NAMES]
 
