@@ -73,7 +73,7 @@ wso github work
 ```
 To open the link in perticular browser instead of using default browser
 ```bash
-wso -b browser_name group name
+wso -b browser_name group_name
 ```
 
 ## Note
