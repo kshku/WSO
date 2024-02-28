@@ -12,6 +12,6 @@ else
     exit 1
 fi
 
-chmox +x "$install_dir/wso"
+chmod +x "$install_dir/wso"
 
 echo "wso has been isntalled to $install_dir"
