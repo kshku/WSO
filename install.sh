@@ -12,6 +12,6 @@ else
     exit 1
 fi
 
-chmod +x "$install_dir/wso"
+sudo chmod +x "$install_dir/wso"
 
 echo "wso has been installed to $install_dir"
