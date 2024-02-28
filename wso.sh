@@ -43,6 +43,8 @@ OPTIONS
                                     2) If <name> is given then removes the <name>
                                     3) If <name> is given and <link> is given using -a(need to give before -r) then removes all the links given in  <link> from <name>
                                     Can't give <link> and <name> using -n option. (It removes <link> from all names and prints error)
+NOTE
+    HERE THE NAME REFERS TO THE NAME OF THE GROUP
 EOF
 }
 
@@ -108,7 +110,7 @@ while true; do
         ;;
         '-b' | '--browser')
             # override the default browser
-            browser="$2" 
+            browser="$2"
             shift 2
             continue
         ;;
@@ -155,10 +157,12 @@ done
 [ ! -f "$file" ] && [ $# -ne 0 ] && { echo "No saved links are found. Exiting..." >&2 ; exit 1; }
 # If no name is given just exit(exit code is zero. Because the user may have added or remvoed addresses or asked to list addresses).
 [ $# -eq 0 ] && exit 0
+
 # in my system google-chrome is present as google-chrome-stable but xdg-settings gives browser name as google-chrome
 # so if the browser is google-chrome, it should be changed to google-chrome-stable
 # If you have problems like this, you can solve it here by adding similar statements
 [ "$browser" = "google-chrome" ] && browser="google-chrome-stable"
+
 # Check whether the browser exitst or not
 command -v "$browser" > /dev/null 2>&1 || { echo "Error: $browser is not found. Exiting..." >&2 ; exit 1; }
 
