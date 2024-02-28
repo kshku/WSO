@@ -6,11 +6,11 @@ wso is a simple shell script for managing and opening webpages links in a browse
 ## Install
 Either run
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/yourusername/yourrepository/main/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/kshku/WSO/main/install.sh)"
 ```
 or run
 ```bash
-sh -c "$(wget -qO- https://raw.githubusercontent.com/yourusername/yourrepository/main/install.sh)"
+sh -c "$(wget -qO- https://raw.githubusercontent.com/kshku/WSO/main/install.sh)"
 ```
 or manually install by copying and pasting the wso.sh file
 
