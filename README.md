@@ -10,7 +10,7 @@ sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/kshku/WSO/main/instal
 ```
 or run
 ```bash
-sudo sh -c "$(wget -qO- https://raw.githubusercontent.com/kshku/WSO/main/install.sh)"
+sudo sh -c "$(wget -qO - https://raw.githubusercontent.com/kshku/WSO/main/install.sh)"
 ```
 or manually install by copying and pasting the wso.sh file
 
@@ -34,7 +34,7 @@ NOTE
     HERE THE NAME REFERS TO THE NAME OF THE GROUP
 ```
 
-## Exammples
+## Examples
 
 Save the link https://github.com as github
 ```bash
